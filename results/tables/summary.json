@@ -1,0 +1,56 @@
+{
+  "structural_summary": {
+    "eigenvalues": [
+      "(-0.3+1.9773719933285188j)",
+      "(-0.3-1.9773719933285188j)"
+    ],
+    "controllability_rank": 2,
+    "observability_rank": 2
+  },
+  "lqr_sensitivity": {
+    "light": {
+      "Q": [
+        10.0,
+        1.0
+      ],
+      "R": 1.0,
+      "tracking_rmse": 0.15052671712969093,
+      "control_effort": 50.56609117550691,
+      "max_abs_u": 0.9698296312401277,
+      "exceeds_actuator_limit": false
+    },
+    "medium": {
+      "Q": [
+        100.0,
+        5.0
+      ],
+      "R": 0.5,
+      "tracking_rmse": 0.04617679448189664,
+      "control_effort": 223.25110469504392,
+      "max_abs_u": 3.796344176493139,
+      "exceeds_actuator_limit": false
+    },
+    "aggressive": {
+      "Q": [
+        200.0,
+        10.0
+      ],
+      "R": 0.2,
+      "tracking_rmse": 0.02185707727579652,
+      "control_effort": 399.04815575982235,
+      "max_abs_u": 7.314341744545066,
+      "exceeds_actuator_limit": true
+    }
+  },
+  "generalization": {
+    "nn": {
+      "in_distribution_rmse": 0.007620156797209765,
+      "unseen_condition_rmse": 0.015530206925900234
+    },
+    "kernel": {
+      "in_distribution_rmse": 0.01438887285051024,
+      "unseen_condition_rmse": 0.05805206110039647
+    }
+  },
+  "observer_velocity_rmse": 0.03885869474346159
+}
